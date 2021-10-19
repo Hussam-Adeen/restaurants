@@ -1,0 +1,1658 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: fantasy;
+  box-sizing: border-box;
+}
+                              /*START GRID OF ALL CONTAINER*/
+.king{
+display: grid;
+  height: 100vh;
+  grid-template-rows:59px auto 10px;
+  grid-template-columns: 
+  10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  grid-template-areas: 
+  "logo logo nav nav nav nav nav nav nav nav"
+  "cont cont cont cont cont cont cont side side side"
+  "cont cont cont cont cont cont cont side side side"
+}
+
+h3{
+  grid-area: logo;
+  padding-top: 0px;
+  padding-left: 5px;
+  font-size: 60px;
+  color:#664e88;
+  opacity: 1;
+  font-weight: bold;
+  font-family: Fleur De Leah;
+}
+nav{
+  grid-area: nav;
+  padding: 0px;
+  overflow: scroll;
+}
+ul{
+  display: flex;
+  justify-content: flex-end;
+}
+li{
+  list-style: none;
+  padding-left: 7px;
+  margin-right: 7px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+section {
+  grid-area: cont;
+  padding: 10px;
+  overflow: scroll;
+}
+aside{
+  grid-area: side;
+  background-color:white ;
+  padding: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+footer{
+  grid-area: foot;
+  background-color: red;
+  opacity:.9;
+  padding: 10px;
+  display: none;
+}
+.meals{
+  color: #b80e65;
+  font-weight: bold;
+  font-size: 50px;
+  font-family: cursive;
+  padding-left: -5px;
+  padding-top: 10px;
+}
+.cakes{
+  color: #b80e65;
+  font-weight: bold;
+  font-size: 50px;
+  font-family: cursive;
+  padding-left: -5px;
+  padding-top: 30px;
+}
+.chef{
+  color: #b80e65;
+  position: relative;
+  top: 300px;
+  font-size: 50px;
+  font-family: cursive;
+  font-weight: bold;
+  text-align: center;
+}
+                              /*END GRID OF ALL CONTAINER*/
+
+
+
+
+                              /*START GRID OF MEALS CONTAINER*/
+.container-section div{
+  display: grid;
+  height: 30%;
+  width: 98%;
+  margin-top: 15px;
+  margin-left: 1%;
+  margin-right: 1%;
+  grid-template-rows: 30px 20px 50px 20px;
+  grid-template-columns: 20% 80%;
+  grid-template-areas: 
+  "picture heading"
+  "picture date"
+  "picture paragraph"
+  "picture readmore";
+  border-radius: 10px;
+  background-color: #eee;
+  box-shadow: 0 5px 2px 3px lightgrey;
+}
+h1{
+  color: purple;
+  font-size: 28px;
+  opacity: .7;
+  text-align: center;
+}
+.container-section .h5-1 {
+  grid-area: readmore;
+    position: relative;
+    left: 20px;
+    top: -30px;
+    color: red;
+    font-size: 15px;
+}
+.container-section h4{
+  grid-area: heading;
+  font-size: 17px;
+  padding-top: 5px;
+  padding-left: 20px;
+}
+.container-section span{
+  grid-area: date;
+  padding-left: 35px;
+}
+.container-section p{
+  grid-area: paragraph;
+  padding-left: 20px;
+  color: gray;
+}
+.container-section img{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  grid-area: picture;
+  width: 100%;
+  height: 100%;
+}
+                              /*END GRID OF MEALS CONTAINER*/
+
+
+
+
+                              /*START GRID OF CAKES CONTAINER*/
+.container-section-2{
+  display: grid;
+  grid-template-rows: 100px;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-areas: "a b c d";
+  transition: 1s;
+  perspective: 1000px;
+}
+
+.container-section-2 .one{
+  grid-area: a;
+  margin-top:30px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 2px 3px lightgrey;
+  transition: 1s;
+}
+.container-section-2 .one:hover{
+  transform: translate3d(0px ,-10px, 10px);
+  transition-duration: 1s;
+  transition-delay: .1s;
+}
+.container-section-2 .two{
+  grid-area: b;
+  margin-top:30px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 2px 3px lightgrey;
+  transition: 1s;
+}
+.container-section-2 .two:hover{
+  transform: translate3d(0px ,-10px, 10px);
+  transition-duration: 1s;
+  transition-delay: .1s;
+}
+.container-section-2 .three{
+  grid-area: c;
+  margin-top:30px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 2px 3px lightgrey;
+  transition: 1s;
+}
+.container-section-2 .three:hover{
+  transform: translate3d(0px ,-10px, 10px);
+  transition-duration: 1s;
+  transition-delay: .1s;
+}
+.container-section-2 .four{
+  grid-area: d;
+  margin-top:30px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 2px 3px lightgrey;
+  transition: 1s;
+  
+}
+.container-section-2 .four:hover{
+  transform: translate3d(0px ,-10px, 10px);
+  transition-duration: 1s;
+  transition-delay: .1s;
+}
+                              /*END GRID OF CAKES CONTAINER*/
+
+
+
+
+                              /*START GRID OF CHEFS*/
+.container-section-3{
+  display: grid;
+  grid-template-rows: 100px;
+  grid-template-columns: 20% 20% 20%;
+  grid-template-areas: "aa bb cc";
+}
+ .container-section-3 .chef-one{
+  grid-area: aa;
+}
+ .container-section-3 .chef-two{
+  grid-area: bb;
+}
+ .container-section-3 .chef-three{
+  grid-area: cc;
+}
+ .container-section-3 .chef-one{
+  display: grid;
+  height: 400px;
+  width: 230px;
+  border-radius: 10px;
+  margin-left: 15%;
+  border-color: lightgray;
+  border-style: solid;
+  border-width: 1px;
+  margin-bottom: 30px;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 100%;
+  grid-template-areas: "aaa" "bbb"  "ccc";
+  background-color: white;
+  margin-top: 320px;
+}
+.chef-one img{
+   grid-area: aaa;
+   margin: auto;
+   margin-top: 7px;
+   border-radius: 50%;
+   width: 145px;
+   height:160px;
+}
+.chef-one h6{
+  grid-area: bbb;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 70px;
+}
+.chef-one p{
+  grid-area: ccc;
+  margin-top: 10px;
+  padding: 10px;
+  color:dimgray;
+}
+.container-section-3 .chef-two{
+  display: grid;
+  height: 400px;
+  width: 230px;
+  border-radius: 10px;
+  margin-left: 85%;
+  border-color: lightgray;
+  border-style: solid;
+  border-width: 1px;
+  margin-bottom: 30px;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 100%;
+  grid-template-areas: "aaa""bbb""ccc";
+  background-color: white;
+  margin-top: 320px;
+}
+.chef-two img{
+  grid-area: aaa;
+  margin: auto;
+  margin-top: 7px;
+  border-radius: 50%;
+  width: 160px;
+  height:160px;
+}
+.chef-two h6{
+  grid-area: bbb;
+  font-weight: bold;
+  font-size: 26px;
+  text-align: center;
+  margin-top: 70px;
+}
+.chef-two p{
+  grid-area: ccc;
+  margin-top:10px;
+  padding: 10px;
+  color:dimgray;
+}
+.container-section-3 .chef-three{
+  display: grid;
+  height: 400px;
+  width: 230px;
+  border-radius: 10px;
+  margin-left: 270px;
+  border-color: lightgray;
+  border-style: solid;
+  border-width: 1px;
+  margin-bottom: 30px;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 100%;
+  grid-template-areas: "aaa""bbb""ccc";
+  background-color: white;
+  margin-top: 320px;
+}
+.chef-three img{
+   grid-area: aaa;
+   margin: auto;
+   margin-top: 7px;
+   border-radius: 50%;
+   width: 145px;
+   height:160px;
+}
+.chef-three h6{
+  grid-area: bbb;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 70px;
+}
+.chef-three p{
+  grid-area: ccc;
+  margin-top: 10px;
+  padding: 10px;
+  color:dimgray;
+}
+                              /*END GRID OF CHEFS*/
+
+
+
+
+
+                              /*START ID*/
+ .container-section-end{
+     display:grid;
+     margin-top: 650px;
+     height: 160px;
+     margin-left: 150px;
+     border-radius: 15px;
+     grid-template-rows: 80px;
+     grid-template-columns: 75%;
+     grid-template-areas: "div";
+   }
+ .container-section-end img{
+     grid-area: div;
+     width: 30%;
+     height: 100%;
+   }
+ .container-section-end h3{
+     grid-area: div;
+   }
+ .container-section-end p{
+     grid-area: div;
+   }
+ .container-section-end div{
+   display: grid;
+   height: 160px;
+   border-radius: 15px;
+   grid-template-rows: 100px 100px;
+   grid-template-columns: 30% 70%;
+   grid-template-areas: "img tex" "img tex";
+   background-color: #eee;
+ }
+ .container-section-end img{
+     grid-area: img;
+     border-top-left-radius: 15px;
+     border-bottom-left-radius: 15px;
+     width: 100%;
+     height: 160px;
+   }
+ .container-section-end .h-3{
+     grid-area: tex;
+     color:dimgray;
+     font-family: fantasy;
+     font-size: 25px;
+     padding-top: 5px;
+     padding-left: 15px;
+   }
+ .container-section-end p{
+     grid-area: tex;
+     margin-top: 30px;
+     padding-left: 7px;
+     padding-top: 5px;
+   }
+  h5{
+     font-weight: bold;
+     font-size: 30px;
+     position: relative;
+     top: 630px;
+     margin-top: 20px;
+     color:cadetblue;
+   }
+                              /*END ID*/
+
+
+
+
+                              /*START GRID OF CAKES CONTAINER INSIDE ITSELF*/
+         /*START ONE*/
+.one{
+  display: grid;
+  height: 390px;
+  grid-template-rows: 60px 60px 60px;
+  grid-template-columns: 100%;
+  grid-template-areas: "img" "head" "tex";
+  border-radius: 10px;
+
+}
+.one img{
+  grid-area: img;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 200px;
+}
+.one h6{
+  grid-area:head;
+  margin-top: 145px;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+}
+.one p{
+  grid-area: tex;
+  margin-top: 105px;
+  padding: 10px;
+  height: 150px;
+  overflow-y: scroll;
+}
+         /*END ONE*/
+
+
+         /*START TWO*/
+.two{
+  display: grid;
+  height: 390px;
+  grid-template-rows: 60px 60px 60px;
+  grid-template-columns: 100%;
+  grid-template-areas: "img" "head" "tex";
+  border-radius: 10px;
+}
+.two img{
+  grid-area: img;
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.two h6{
+  grid-area:head;
+  margin-top: 140px;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+}
+.two p{
+  grid-area: tex;
+  margin-top: 105px;
+  padding: 10px;
+  height: 150px;
+  overflow-y: scroll;
+}
+         /*END TWO*/
+
+
+         /*START THREE*/
+.three{
+  display: grid;
+  height: 390px;
+  grid-template-rows: 60px 60px 60px;
+  grid-template-columns: 100%;
+  grid-template-areas: "img" "head" "tex";
+  border-radius: 10px;
+}
+.three img{
+  grid-area: img;
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.three h6{
+  grid-area:head;
+  margin-top: 140px;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+}
+.three p{
+  grid-area: tex;
+  margin-top: 105px;
+  padding: 10px;
+  height: 150px;
+  overflow-y: scroll;
+}
+         /*END THREE*/
+
+
+         /*START FOUR*/
+.four{
+  display: grid;
+  height: 390px;
+  grid-template-rows: 60px 60px 60px;
+  grid-template-columns: 100%;
+  grid-template-areas: "img" "head" "tex";
+  border-radius: 10px;
+}
+.four img{
+  grid-area: img;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 200px;
+}
+.four h6{
+  grid-area:head;
+  margin-top: 140px;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+}
+.four p{
+  grid-area: tex;
+  margin-top: 105px;
+  padding: 10px;
+  height: 150px;
+  overflow-y: scroll;
+}
+         /*END FOUR*/
+                              /*END GRID OF CAKES CONTAINER INSIDE ITSELF*/
+                              
+                              
+                              
+aside input {
+  border-radius: 20px;
+  padding: 5px;
+  width: 230px;
+  height: 30px;
+  margin-left: 40px;
+  border-color: lightgray;
+  border-style: solid;
+  border-width: 1px;
+  outline: none;
+}
+/*START SIDE CHAPTER-1*/
+
+
+.container-side-ch-1 .menu .food{
+  position: relative;
+  top: 10px;
+  left: 10px;
+  margin-top: -10px;
+  color: dimgray
+}
+.food::before{
+  content: "";
+  border-color: transparent cornflowerblue transparent transparent;
+  border-radius: 0px;
+  border-style: solid;
+  border-width: 7px;
+  width:0px;
+  height: 0px;
+  position: absolute;
+  left: -17px;
+  top:2px;
+}
+.container-side-ch-1 .menu .price{
+  position: relative;
+  left: 330px;
+  top:-9px;
+  color: dimgray
+}
+hr{
+  color: black;
+  margin-bottom: 0px;
+  margin-top: 3px;
+}
+.menu h2{
+  font-family: cursive;
+  font-weight: bold;
+  color: blue;
+  opacity: .8;
+  font-size: 35px;
+}
+.last{
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 40px;
+  color:green;
+  opacity: .5;
+}
+.last-king{
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.last-posts{
+  display: grid;
+  height: 350px;
+  position: relative;
+  grid-template-rows: 110px 110px 110px 110px 110px 110px 110px 110px 110px 110px;
+  grid-template-columns: 100%;
+  grid-template-areas: 
+  "post-one" 
+  "post-two" 
+  "post-three" 
+  "post-four" 
+  "post-five" 
+  "post-six" 
+  "post-seven" 
+  "post-eight" 
+  "post-nine" 
+  "post-ten";
+}
+.last-posts .post-1{
+  grid-area: post-one;
+  border-style: solid solid solid solid;
+  border-color: transparent transparent lightgray transparent;
+  border-width: 1px;
+  padding-bottom:5px; 
+  position: relative;
+  top: 15px;
+}
+.last-posts .post-1{
+  display: grid;
+  grid-template-rows: 100px 100px;
+  grid-template-columns: 40% 60%;
+  grid-template-areas: "img tex" "img tex";
+}
+.last-posts .post-1 img{
+  grid-area: img;
+  border-radius: 10px;
+  width: 100%;
+  height:100% ;
+}
+.last-posts .post-1 p{
+  grid-area: tex;
+  position: absolute;
+  top:5px;
+  left: 5px;
+}
+.last-posts .post-1 span{
+  grid-area: tex;
+  position: absolute;
+  top:30px;
+  left:15px;
+}
+.last-posts .post-2 {
+  grid-area: post-two;
+  border-style: solid solid solid solid;
+  border-color: transparent transparent lightgray transparent;
+  border-width: 1px;
+  padding-bottom:5px;
+  position: relative;
+  top:20px;
+}
+.last-posts .post-2{
+  display: grid;
+  grid-template-rows: 100px 100px;
+  grid-template-columns: 40% 60%;
+  grid-template-areas: "img tex" "img tex";
+}
+.last-posts .post-2 img{
+  grid-area: img;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+.last-posts .post-2 p{
+  grid-area: tex;
+  position: relative;
+  top:5px;
+  left: 5px;
+}
+.last-posts .post-2 span{
+  grid-area: tex;
+  position: relative;
+  top:30px;
+  left:15px;
+}
+.last-posts .post-3{
+  grid-area: post-three;
+  border-style: solid solid solid solid;
+  border-color: transparent transparent lightgray transparent;
+  border-width: 1px;
+  padding-bottom:5px;
+  position: relative;
+  top: 25px;
+}
+.last-posts .post-3{
+  display: grid;
+  grid-template-rows: 100px 100px;
+  grid-template-columns: 40% 60%;
+  grid-template-areas: "img tex" "img tex";
+}
+.last-posts .post-3 img{
+  grid-area: img;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+.last-posts .post-3 p{
+  grid-area: tex;
+  position: relative;
+  top:5px;
+  left: 5px;
+}
+.last-posts .post-3 span{
+  grid-area: tex;
+  position: relative;
+  top:30px;
+  left:15px;
+}
+.last-posts .post-4{
+  grid-area: post-four;
+  border-style: solid solid solid solid;
+  border-color: transparent transparent lightgray transparent;
+  border-width: 1px;
+  padding-bottom:5px;
+  position: relative;
+  top: 30px;
+}
+.last-posts .post-4{
+  display: grid;
+  grid-template-rows: 100px 100px;
+  grid-template-columns: 40% 60%;
+  grid-template-areas: "img tex" "img tex";
+}
+.last-posts .post-4 img{
+  grid-area: img;
+  border-radius: 10px;
+  width: 100%;
+  height:100% ;
+}
+.last-posts .post-4 p{
+  grid-area: tex;
+  position: relative;
+  top:5px;
+  left: 5px;
+}
+.last-posts .post-4 span{
+  grid-area: tex;
+  position: relative;
+  top:30px;
+  left:15px;
+}
+.last-posts .post-5{
+  grid-area: post-five;
+  border-style: solid solid solid solid;
+  border-color: transparent transparent lightgray transparent;
+  border-width: 1px;
+  padding-bottom:5px;
+  position: relative;
+  top: 35px;
+}
+.last-posts .post-5{
+  display: grid;
+  grid-template-rows: 100px 100px;
+  grid-template-columns: 40% 60%;
+  grid-template-areas: "img tex" "img tex";
+}
+.last-posts .post-5 img{
+  grid-area: img;
+  border-radius: 10px;
+  width: 100%;
+  height:100% ;
+}
+.last-posts .post-5 p{
+  grid-area: tex;
+  position: relative;
+  top:5px;
+  left: 5px;
+}
+.last-posts .post-5 span{
+  grid-area: tex;
+  position: relative;
+  top:30px;
+  left:15px;
+}
+.last-posts .post-6{
+  grid-area: post-six;
+  border-style: solid solid solid solid;
+  border-color: transparent transparent lightgray transparent;
+  border-width: 1px;
+  padding-bottom:5px;
+  position: relative;
+  top: 40px;
+}
+.last-posts .post-6{
+  display: grid;
+  grid-template-rows: 100px 100px;
+  grid-template-columns: 40% 60%;
+  grid-template-areas: "img tex" "img tex";
+}
+.last-posts .post-6 img{
+  grid-area: img;
+  border-radius: 10px;
+  width: 100%;
+  height:100% ;
+}
+.last-posts .post-6 p{
+  grid-area: tex;
+  position: relative;
+  top:5px;
+  left: 5px;
+}
+.last-posts .post-6 span{
+  grid-area: tex;
+  position: relative;
+  top:30px;
+  left:15px;
+}
+.last-posts .post-7{
+  grid-area: post-seven;
+  border-style: solid solid solid solid;
+  border-color: transparent transparent lightgray transparent;
+  border-width: 1px;
+  padding-bottom:5px;
+  position: relative;
+  top: 45px;
+}
+.last-posts .post-7{
+  display: grid;
+  grid-template-rows: 100px 100px;
+  grid-template-columns: 40% 60%;
+  grid-template-areas: "img tex" "img tex";
+}
+.last-posts .post-7 img{
+  grid-area: img;
+  border-radius: 10px;
+  width: 100%;
+  height:100% ;
+}
+.last-posts .post-7 p{
+  grid-area: tex;
+  position: relative;
+  top:5px;
+  left: 5px;
+}
+.last-posts .post-7 span{
+  grid-area: tex;
+  position: relative;
+  top:30px;
+  left:15px;
+}
+.last-posts .post-8{
+  grid-area: post-eight;
+  border-style: solid solid solid solid;
+  border-color: transparent transparent lightgray transparent;
+  border-width: 1px;
+  padding-bottom:5px;
+  position: relative;
+  top: 50px;
+}
+.last-posts .post-8{
+  display: grid;
+  grid-template-rows: 100px 100px;
+  grid-template-columns: 40% 60%;
+  grid-template-areas: "img tex" "img tex";
+}
+.last-posts .post-8 img{
+  grid-area: img;
+  border-radius: 10px;
+  width: 100%;
+  height:100% ;
+}
+.last-posts .post-8 p{
+  grid-area: tex;
+  position: relative;
+  top:5px;
+  left: 5px;
+}
+.last-posts .post-8 span{
+  grid-area: tex;
+  position: relative;
+  top:30px;
+  left:15px;
+}
+.last-posts .post-9{
+  grid-area: post-nine;
+  border-style: solid solid solid solid;
+  border-color: transparent transparent lightgray transparent;
+  border-width: 1px;
+  padding-bottom:5px;
+  position: relative;
+  top: 55px;
+}
+.last-posts .post-9{
+  display: grid;
+  grid-template-rows: 100px 100px;
+  grid-template-columns: 40% 60%;
+  grid-template-areas: "img tex" "img tex";
+}
+.last-posts .post-9 img{
+  grid-area: img;
+  border-radius: 10px;
+  width: 100%;
+  height:100% ;
+}
+.last-posts .post-9 p{
+  grid-area: tex;
+  position: relative;
+  top:5px;
+  left: 5px;
+}
+.last-posts .post-9 span{
+  grid-area: tex;
+  position: relative;
+  top:30px;
+  left:15px;
+}
+.last-posts .post-10{
+  grid-area: post-ten;
+  border-style: solid solid solid solid;
+  border-color: transparent transparent transparent transparent;
+  border-width: 1px;
+  padding-bottom:0px;
+  position: relative;
+  top: 60px;
+}
+.last-posts .post-10{
+  display: grid;
+  grid-template-rows: 100px 100px;
+  grid-template-columns: 40% 60%;
+  grid-template-areas: "img tex" "img tex";
+}
+.last-posts .post-10 img{
+  grid-area: img;
+  border-radius: 10px;
+  width: 100%;
+  height:100% ;
+}
+.last-posts .post-10 p{
+  grid-area: tex;
+  position: relative;
+  top:5px;
+  left: 5px;
+}
+.last-posts .post-10 span{
+  grid-area: tex;
+  position: relative;
+  top:30px;
+  left:15px;
+}
+/*END SIDE CHAPTER-1*/
+
+/*START OFFER*/
+.offer{
+  background-image: url(IMG_20211013_151124.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  width: 300px;
+  margin: auto;
+  text-align: center;
+  color: white;
+  font-family: cursive;
+  font-size: 30px;
+  margin-top: 10px;
+}
+.offer p{
+  font-family: cursive;
+  font-size: 40px;
+}
+.small{
+  font-size: 15px;
+  position: relative;
+  top:-25px;
+  left: -20px
+}
+.offer button{
+  border-radius: 20px;
+  border-style: solid;
+  border-color: transparent;
+  padding: 5px;
+  background-color: red;
+  opacity: .8;
+  position: relative;
+  top: -35px;
+  left:-40px;
+  color: white;
+  font-weight: bold;
+  outline: none;
+}
+.offer .number{
+  color: red;
+  opacity: .8;
+  font-size: 60px;
+}
+/*END OFFER*/
+
+/*START TAGS*/
+.tags{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  width: 330px;
+  height: 100px;
+  margin: auto;
+  margin-top:15px;
+  margin-left: -10px;
+}
+.tags div{
+  background-color:#eee;
+  text-align: center;
+  padding: 10px;
+  margin-top: 5px;
+  margin-left: 2px;
+  border-radius: 20px;
+  font-size: 15px;
+}
+/*END TAGS*/
+
+/*START INSTAGRAM*/
+.in{
+  margin-top: 5px;
+  border-width: 1px;
+  border-style: solid solid solid solid;
+  border-color: transparent transparent transparent transparent;
+  margin-top: 0px;
+  width: 100%;
+  height: 320px;
+  padding:0;
+}
+.inside-insta{
+  position: relative;
+  margin-left: 45px;
+  margin-top: 5px;
+}
+.inside-insta .img-1{
+  border-radius: 10px;
+  position: relative;
+  left:-40px;
+  width: 95px;
+  height: 100px;
+}
+.inside-insta .img-2 {
+  border-radius: 10px;
+  position: relative;
+  left:-40px;
+  width: 150px;
+  height: 100px;
+}
+.inside-insta .img-3 {
+  border-radius: 10px;
+  position: absolute;
+  left:213px;
+  top:0px;
+  width: 100px;
+  height: 120px;
+}
+.inside-insta .img-4 {
+  border-radius: 10px;
+  position: relative;
+  left:-40px;
+  width: 140px;
+  height: 100px;
+}
+.inside-insta .img-5 {
+  border-radius: 10px;
+  position: absolute;
+  left:107px;
+  width: 100px;
+  height: 120px;
+}
+.inside-insta .img-6 {
+  border-radius: 10px;
+  position: absolute;
+  right: 3px;
+  top: 125px;
+  width: 100px;
+  height: 100px;
+}
+.inside-insta .img-7 {
+  border-radius: 2px;
+  position: absolute;
+  top: 228px;
+  left: -10px;
+  width: 300px;
+  height: 80px;
+}
+
+.insta-p{
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 40px;
+  margin-top: 10px;
+  color: deeppink;
+  opacity: .8
+}
+/*END INSTAGRAM*/
+ .div{
+  display: flex;
+  flex-direction: row;
+  width: 230px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top:630px;
+  left:37%;
+}
+.div span{
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  border-color: lightgrey;
+  border-style: solid;
+  border-width: 1px;
+  position: relative;
+  align-items: center;
+  margin: 1px;
+  color: darkgray;
+  padding-top: 7px;
+  padding-left: 12px;
+}
+.div:hover .span-2{
+  color:white;
+  background-color: red;
+  opacity: .9;
+}
+
+.pa{
+  color:white;
+  font-weight: bold;
+}
+.div .span-1 {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  border-color: red;
+  opacity: .8;
+  border-style: solid;
+  border-width: 1px;
+  position: relative;
+  align-items: center;
+  margin: 1px;
+  background-color: red;
+  color: white;
+  padding-top: 7px;
+  padding-left: 12px;
+}
+
+@media (min-width: 0px) and (max-width: 559px)/*Phones View*/{
+  .king{
+  display: grid;
+  height: 100vh;
+  grid-template-rows:50px auto 50px;
+  grid-template-columns: 
+                        10% 10% 10% 10% 10% 10% 10% 10% 10% 10% ;
+  grid-template-areas: 
+                      "logo logo nav nav nav nav nav nav nav nav"
+                      "cont cont cont cont cont cont cont cont cont cont "
+                      "foot foot foot foot foot foot foot foot foot foot "
+}
+.chef {
+  color: #b80e65;
+  position: relative;
+  top: 600px;
+  font-size: 50px;
+  font-family: cursive;
+  font-weight: bold;
+  text-align: center;
+}
+.container-section-2 {
+  display: grid;
+  grid-template-rows: 100px 100px;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "a b" "c d";
+  transition: 1s;
+  perspective: 1000px;
+}
+.container-section-2 .three {
+  grid-area: c;
+  margin-top: 335px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 2px 3px lightgrey;
+  transition: 1s;
+}
+.container-section-2 .four {
+  grid-area: d;
+  margin-top: 335px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 2px 3px lightgrey;
+  transition: 1s;
+}
+ .div {
+   display: flex;
+   flex-direction: row;
+   width: 230px;
+   height: 50px;
+   justify-content: space-between;
+   align-items: center;
+   position: relative;
+   top: 1190px;
+   margin-left: -55px;
+ }
+
+aside {
+ grid-area: cont;
+ display: none;
+}
+.container-section div {
+  display: grid;
+  height: 10%;
+  width: 101%;
+  margin-left: -3px;
+  padding: 0;
+  grid-template-rows: 30px 20px 50px 5px;
+  grid-template-columns: 40% 60%;
+  grid-template-areas:
+    "picture heading"
+    "picture date"
+    "picture paragraph"
+    "picture readmore";
+  border-radius: 10px;
+  background-color: #eee;
+}
+container-section .h5-1 {
+  grid-area: readmore;
+  position: relative;
+  left: -50px;
+  top: 0px;
+  color: red;
+  font-size: 15px;
+}
+.container-section h4{grid-area: heading;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+.container-section span{grid-area: date;
+  padding-left: 15px;
+}
+.container-section p{grid-area: paragraph;
+  padding-top: 5px;
+  padding-left: 5px;
+  overflow-y: scroll;
+}
+.container-section img{
+  background-color: palegreen;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  grid-area: picture;
+  width: 100%;
+  height: 100%;
+}
+h3 {
+  grid-area: logo;
+  padding-top: 1px;
+  padding-left: 1px;
+  font-size: 40px;
+  color: #664e88;
+  opacity: 1;
+  font-weight: bold;
+  font-family: Fleur De Leah;
+}
+h1{
+  margin-top: 15px;
+}
+.container-section-3 {
+  display: grid;
+  grid-template-rows: 100px;
+  grid-template-columns: 20% 20% 20%;
+  grid-template-areas: "aa bb cc";
+}
+ .container-section-3 .chef-one{
+  grid-area: aa;
+  position: relative;
+  top: 300px;
+  width:180px;
+}
+ .container-section-3 .chef-two{
+  grid-area: bb;
+  position: relative;
+  top: 300px;
+  width:180px;
+}
+.container-section-3 .chef-one{
+  display: grid;
+  height: 320px;
+  width: 180px;
+  border-radius: 10px;
+  margin-left: 5%;
+  border-color: lightgray;
+  border-style: solid;
+  border-width: 1px;
+  margin-bottom: 30px;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 100%;
+  grid-template-areas: "aaa" "bbb"  "ccc";
+  background-color: white;
+  margin-top: 320px;
+}
+.chef-one img{
+   grid-area: aaa;
+   margin: auto;
+   margin-top: 7px;
+   border-radius: 50%;
+   width: 150px;
+   height:160px;
+}
+.chef-one h6{
+  grid-area: bbb;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 70px;
+}
+.chef-one p{
+  grid-area: ccc;
+  margin-top: 0px;
+  padding: 10px;
+  color:dimgray;
+  overflow-y: scroll;
+}
+.container-section-3 .chef-two{
+  display: grid;
+  height: 320px;
+  width: 180px;
+  border-radius: 10px;
+  margin-left: 170%;
+  border-color: lightgray;
+  border-style: solid;
+  border-width: 1px;
+  margin-bottom: 30px;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 100%;
+  grid-template-areas: "aaa""bbb""ccc";
+  background-color: white;
+  margin-top: 320px;
+}
+.chef-two img{
+  grid-area: aaa;
+  margin: auto;
+  margin-top: 7px;
+  border-radius: 50%;
+  width: 160px;
+  height:160px;
+}
+.chef-two h6{
+  grid-area: bbb;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 70px;
+}
+.chef-two p{
+  grid-area: ccc;
+  margin-top:0px;
+  padding: 10px;
+  color:dimgray;
+  overflow-y: scroll;
+}
+.container-section-3 .chef-three{
+  display: grid;
+  height: 320px;
+  width: 200px;
+  border-radius: 10px;
+  margin-left: 270px;
+  border-color: lightgray;
+  border-style: solid;
+  border-width: 1px;
+  margin-bottom: 30px;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 100%;
+  grid-template-areas: "aaa""bbb""ccc";
+  background-color: white;
+  position: relative;
+  top: 630px;
+  left: -330px;
+}
+.chef-three img{
+   grid-area: aaa;
+   margin: auto;
+   margin-top: 7px;
+   border-radius: 50%;
+   width: 150px;
+   height:160px ;
+}
+.chef-three h6{
+  grid-area: bbb;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 70px;
+}
+.chef-three p{
+  grid-area: ccc;
+  margin-top: 0px;
+  padding: 10px;
+  color:dimgray;
+  overflow-y: scroll;
+}
+.container-section-end{
+     display:grid;
+     position: relative;
+     top:550px;
+     height: 160px;
+     width: 410px;
+     left: -155px;
+     border-radius: 15px;
+     grid-template-rows: 100px;
+     grid-template-columns: 75%;
+     grid-template-areas: "div";
+   }
+ .container-section-end img{
+     grid-area: div;
+     width: 30%;
+     height: 100%;
+   }
+ .container-section-end h3{
+     grid-area: div;
+   }
+ .container-section-end p{
+     grid-area: div;
+   }
+ .container-section-end div{
+   display: grid;
+   height: 160px;
+   width: 410px;
+   border-radius: 15px;
+   grid-template-rows: 100px 100px;
+   grid-template-columns: 40% 60%;
+   grid-template-areas: "img tex" "img tex";
+   background-color: #eee;
+   overflow-y: scrol;
+   
+ }
+ .container-section-end img{
+     grid-area: img;
+     border-top-left-radius: 15px;
+     border-bottom-left-radius: 15px;
+     width: 100%;
+     height: 160px;
+   }
+ .container-section-end .h-3{
+     grid-area: tex;
+     color: black;
+     font-family: fantasy;
+     font-size: 17px;
+     padding-top: 5px;
+     padding-left: 3px;
+   }
+ .container-section-end p{
+     grid-area: tex;
+     margin-top: 35px;
+     padding-left: 7px;
+     padding-top: 0px;
+     height: 110px;
+     overflow-y: scroll;
+ }
+  h5{
+     font-weight: bold;
+     font-size: 30px;
+     position: relative;
+     top: 335px;
+     margin-top: 20px;
+     overflow-y: scroll;
+   }
+     h5 {
+       font-weight: bold;
+       font-size: 20px;
+       position: relative;
+       top: 1180px;
+       color: cadetblue;
+       margin-top: 20px;
+     }
+}
+@media (min-width: 600px) and (max-width: 950px)/*Tablets View*/{
+  .container-section div {
+    display: grid;
+    height: 135px;
+    width: 98%;
+    margin-top: 15px;
+    margin-left: 1%;
+    margin-right: 1%;
+    grid-template-rows: 30px 20px 50px;
+    grid-template-columns: 28% 75%;
+    grid-template-areas:
+      "picture heading"
+      "picture date"
+      "picture paragraph"
+      "picture readmore";
+    border-radius: 10px;
+    background-color: #eee;
+    box-shadow: 0 5px 2px 3px lightgrey;
+    white-space: wrap;
+    overflow: scroll;
+  }
+  .king {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 50px auto 50px;
+    grid-template-columns:
+      10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-areas:
+      "logo logo nav nav nav nav nav nav nav nav"
+      "cont cont cont cont cont cont cont cont cont cont "
+      "foot foot foot foot foot foot foot foot foot foot "
+  }
+  aside {
+    grid-area: cont;
+    display: none;
+  }
+.container-section-2 {
+  display: grid;
+  grid-template-rows: 100px;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-areas: "a b c d";
+  transition: 1s;
+  perspective: 1000px;
+}
+.container-section-2 .three {
+  grid-area: c;
+  margin-top: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 2px 3px lightgrey;
+  transition: 1s;
+}
+.container-section-2 .four {
+  grid-area: d;
+  margin-top: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 2px 3px lightgrey;
+  transition: 1s;
+}
+.div {
+  display: flex;
+  flex-direction: row;
+  width: 230px;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 650px;
+  left:35%;
+}
+.chef {
+  color: #b80e65;
+  position: relative;
+  top: 300px;
+  font-size: 50px;
+  font-family: cursive;
+  font-weight: bold;
+  text-align: center;
+}
+.container-section-3 .chef-one {
+  display: grid;
+  height: 400px;
+  width: 230px;
+  border-radius: 10px;
+  border-color: lightgray;
+  border-style: solid;
+  border-width: 1px;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 100%;
+  grid-template-areas: "aaa""bbb""ccc";
+  background-color: white;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+.container-section-3 .chef-two {
+  display: grid;
+  height: 400px;
+  width: 230px;
+  border-radius: 10px;
+  border-color: lightgray;
+  border-style: solid;
+  border-width: 1px;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 100%;
+  grid-template-areas: "aaa""bbb""ccc";
+  background-color: white;
+  position: relative;
+  top: 10px;
+  left: -5px;
+}
+.container-section-3 .chef-three {
+  display: grid;
+  height: 400px;
+  width: 230px;
+  border-radius: 10px;
+  border-color: lightgray;
+  border-style: solid;
+  border-width: 1px;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 100%;
+  grid-template-areas: "aaa""bbb""ccc";
+  background-color: white;
+  position: relative;
+  left: -50px;
+  top:10px;
+}
+
+.container-section-end {
+  display: grid;
+  position: relative;
+  top:12px;
+  height: 160px;
+  margin-left: 100px;
+  border-radius: 15px;
+  grid-template-rows: 120px;
+  grid-template-columns: 80%;
+  grid-template-areas: "div";
+}
+h5 {
+  font-weight: bold;
+  font-size: 30px;
+  position: relative;
+  top: 650px;
+  margin-top: 20px;
+  color: cadetblue;
+}
+.container-section div .h5-1 {
+  grid-area: readmore;
+  position: relative;
+  left: 30px;
+  top: -10px;
+  color: red;
+  font-size: 15px;
+}
+}
